@@ -1,0 +1,68 @@
+PYTHON HOSTING BOT V2 - FINAL FEATURE MAP
+
+1. PROJECT / UPLOAD FLOW
+- Create/select a project once.
+- The selected project remains active until the user switches it.
+- Upload File never asks for the project name again when a project is active.
+- Multiple files can be uploaded into the selected project.
+- Done / File Manager opens the selected project's files.
+- Project limits and files-per-project limits are controlled by the selected plan.
+
+2. FILE HOSTING
+- Live upload progress with percentage, bytes, speed and elapsed seconds.
+- Optional Cancel Upload controlled by plan.
+- Supported runnable files use a single Start/Stop button.
+- Restart, Log, Full Log, Download and Delete remain available.
+- requirements.txt / dependency handling remains part of the existing host pipeline.
+
+3. GITHUB
+- Premium/free visibility is controlled by plan.
+- GitHub Run uses the selected project and asks for the repository URL.
+
+4. ADMIN SECURITY
+- Admin Panel is visible only to OWNER_ID / OWNER_ID_2.
+- Non-admin callback attempts receive an admin-only access denied message.
+- Normal users cannot use owner controls.
+
+5. ADMIN DASHBOARD
+- Plans & Access
+- Users
+- Broadcast
+- Force Join
+- Refresh / Main Menu
+
+6. PLANS & ACCESS
+For Free and Premium independently, Admin can control:
+- Daily upload limit (0 = unlimited)
+- Maximum projects (0 = unlimited)
+- Maximum files per project (0 = unlimited)
+- Maximum file size
+- Upload button/feature ON/OFF
+- File Manager ON/OFF
+- GitHub Run ON/OFF
+- Reply-to feature ON/OFF
+- Upload cancellation ON/OFF
+- Auto-delete delay
+
+7. PREMIUM MANAGEMENT
+- Admin can open User Plans.
+- Admin can select any known/approved user.
+- Admin can manage a user by Telegram ID.
+- Give Premium grants bot access automatically.
+- Set Free changes the plan without deleting the user's projects.
+- Reset Daily Usage resets today's upload counter.
+- Revoke Access removes normal bot access.
+- Approve Access grants normal bot access.
+- Owner accounts are always Premium and cannot be revoked.
+
+8. EXISTING FEATURES PRESERVED
+- Force-join channel manager
+- Access request / approval flow
+- Broadcast with confirmation
+- Server status / vitals / RAM / disk
+- Background engine controls
+- File logs and download
+- Render webhook / health endpoints
+
+9. BACKUP
+- No bot.py.bak is included in the final deployment ZIP.
